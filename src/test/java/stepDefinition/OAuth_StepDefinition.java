@@ -26,7 +26,7 @@ public class OAuth_StepDefinition {
 	@Given("^authentication params for request$")
 	public void authentication_params_for_request() {
 		requestSpec=RestAssured.given().baseUri(baseURL);
-	    requestSpec.auth().oauth(ConsumerKey, ConsumerSecret, Token, TokenSecret).queryParam("status", "I am tweeting using rest api");
+	    requestSpec.auth().oauth(ConsumerKey, ConsumerSecret, Token, TokenSecret).queryParam("status", "I am tweetiing using rest api");
 	}
 
 	@When("^users sends request$")
